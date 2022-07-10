@@ -542,3 +542,123 @@ function abTest(a, b) {
     }
 }
 abTest(2,2);
+
+//Counting Cards
+let count = 0;
+function cc(card) {
+    // Only change code below this line
+    if (card == 2 || card == 3 || card == 4 || card == 5 || card == 6){
+        count += 1;
+    }else if (card == 7 || card == 8 || card == 9) {
+        count += 0;
+    }else if (card == "10" || card == "J" || card == "Q" || card == "K" || card == "A"){
+        count += -1
+    }else{
+        return "Change Me";
+    }
+    if(count > 0){
+        return `${count}` + ' Bet';
+    }else{
+        return `${count}` + ' Hold';
+    }
+    // Only change code above this line
+}
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+
+//Build JavaScript Objects
+const myDog = {
+    // Only change code below this line
+    name: "Garold",
+    legs: 3,
+    tails: 1,
+    friends: ["Jessi", "Lamar", "Sarah"]
+    // Only change code above this line
+};
+
+//Accessing Object Properties with Dot Notation
+
+// Setup
+const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+};
+// Only change code below this line
+const hatValue = testObj.hat;      // Change this line
+const shirtValue = testObj.shirt;    // Change this line
+
+//Accessing Object Properties with Bracket Notation
+// Setup
+const testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+};
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["the drink"];    // Change this line
+
+//Accessing Object Properties with Variables
+// Setup
+const testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+};
+// Only change code below this line
+const playerNumber = 16;  // Change this line
+const player = testObj[playerNumber];   // Change this line
+
+//
+// Setup
+const myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+myDog["name"] = "Happy Coder"
+//Add New Properties to a JavaScript Object
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+myDog.bark = "woof"
+
+//Delete Properties from a JavaScript Object
+// Setup
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+};
+// Only change code below this line
+delete myDog["tails"]
+
+//Using Objects for Lookups
+// Setup
+function phoneticLookup(val) {
+    let result = "";
+
+    // Only change code below this line
+    const lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot":"Frank"
+    }
+    result = lookup[val];
+    // Only change code above this line
+    return result;
+}
+
+phoneticLookup("charlie");
