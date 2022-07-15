@@ -3,8 +3,10 @@ function countPositivesSumNegatives(input) {
     let pos = 0;
     let neg = 0;
     let arr = [];
-    if (input === [] || input === null) {
-        arr.push(pos, neg);
+    if (input === null || input.length ===0) {
+        for (const arrKey in arr) {
+            arr.pop();
+        }
     } else {
         for (const inputKey in input) {
             if (input[inputKey] < 0) {
@@ -19,5 +21,5 @@ function countPositivesSumNegatives(input) {
 }
 
 
-console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
+console.log(countPositivesSumNegatives([]))
 
