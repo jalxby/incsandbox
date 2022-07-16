@@ -12,3 +12,23 @@ h1, h2, p {
     margin-left: auto;
     margin-right: auto;
 }
+
+.flavor {
+    text-align: left;
+    width: 50%;
+    /*border-width: 1px;*/
+    /*border-color: black;*/
+    /*border-style: solid;*/
+}
+
+.price {
+    text-align: right;
+    width: 50%;
+    /*border-width: 1px;*/
+    /*border-color: black;*/
+    /*border-style: solid;*/
+}
+
+.item p{
+    display: inline-block;
+}
